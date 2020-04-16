@@ -3,7 +3,7 @@
  *  Contains APEX cpu pipeline implementation
  *
  *  Author :
- *  Gaurav Kothari (gkothar1@binghamton.edu)
+ *  Shrijeet Rupnar
  *  State University of New York, Binghamton
  */
 #include <stdio.h>
