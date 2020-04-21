@@ -1,56 +1,44 @@
 ---------------------------------------------------------------------------------
-APEX Pipeline Simulator with 7 stages
+APEX Pipeline Simulator
 ---------------------------------------------------------------------------------
 A simple implementation of 7 Stage APEX Pipeline
 
+
 Author :
 ---------------------------------------------------------------------------------
-Shrijeet Rupnar (srupnar1@binghamton.edu)
-B-N0 : B00808280
+shrijeet rupnar (srupnar1@binghamton.edu)
 State University of New York, Binghamton
+
 
 Notes:
 ----------------------------------------------------------------------------------
-1) This code is a simple implementation of 7 Stage APEX Pipeline.
-
+1) This code is a simple implementation of 5 Stage APEX Pipeline. 
+	 
 	 Fetch -> Decode -> Execute ->Execute_One-> Memory -> Memory_One-> Writeback
+	 
+	 You can read, modify and build upon given codebase to add other features as
+	 required in project description. You are also free to write your own 
+	 implementation from scratch.
 
-
-
-2) All the stages have latency of one cycle. There is a single functional unit in
+2) All the stages have latency of one cycle. There is a single functional unit in 
 	 EX stage which perform all the arithmetic and logic operations.
 
-3) Logic to check data dependencies has been included in Decode/RF stage.
+3) Logic to check data dependencies has not be included. You have to implement it.
 
 File-Info
 ----------------------------------------------------------------------------------
 1) Makefile 			- You can edit as needed
 2) file_parser.c 	- Contains Functions to parse input file. No need to change this file
-3) cpu.c          - Contains Implementation of APEX cpu.
-4) cpu.h          - Contains various data structures declarations needed by 'cpu.c'.
-
+3) cpu.c          - Contains Implementation of APEX cpu. You can edit as needed
+4) cpu.h          - Contains various data structures declarations needed by 'cpu.c'. You can edit as needed
+	 
 
 How to compile and run
 ----------------------------------------------------------------------------------
 1) go to terminal, cd into project directory and type 'make' to compile project
-2) Run using ./apex_sim <input file name> <simulate> no_of_clock_cycles
+2) Run using ./apex_sim <input file name>
 
-Ex: ./apex_sim input.asm simulate 10
 
-3) Run using ./apex_sim <input file name> <display> no_of_clock_cycles
+Please contact your TAs for any assistance or query!
 
-Ex: ./apex_sim input.asm display 10
 
-----------------------------------------------------------------------------------
-
-NOTE:
-I have implemented ADD, ADDL, SUB, SUBL, LOAD, LDR, STORE, STR,AND, OR, EX-OR,JUMP,HALT
-Stalling is working
-JUMP is working
-HALT is working
-display and simulate is working
-
-I have tried but could not implement  below instructions successfully
-1. BZ 2. BNZ
-
-----------------------------------------------------------------------------------
